@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Visualization Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-6">Data Visualization Dashboard on Human Development Index</h1>
+        <div class="mb-4">
+            <button class="tablinks px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" onclick="openTab(event, 'tableau')">Tableau Dashboard</button>
+            <button class="tablinks px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" onclick="openTab(event, 'linear-regression')">Linear Regression</button>
+            <button class="tablinks px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" onclick="openTab(event, 'clustering')">Clustering</button>
+            <button class="tablinks px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" onclick="openTab(event, 'time-series')">Time Series</button>
+        </div>
+
+        <div id="tableau" class="tab hidden">
+            <h2 class="text-2xl font-semibold"></h2>
+            <iframe src="tableau/tableau.html" width="1200px" height="1000px" class="border"></iframe>
+        </div>        
+
+        <div id="linear-regression" class="tab hidden">
+            <h2 class="text-2xl font-semibold">Linear Regression Visualization</h2>
+            <div id="linear-regression-visualization"></div>
+            <script src="linear_regression/linear_regression.js"></script>
+        </div>
+
+        <div id="clustering" class="tab hidden">
+            <h2 class="text-2xl font-semibold">Clustering Visualization</h2>
+            <div id="clustering-visualization"></div>
+            <script src="clustering/clustering.js"></script>
+        </div>
+
+        <div id="time-series" class="tab hidden">
+            <h2 class="text-2xl font-semibold">Time Series Prediction Visualization</h2>
+            <div id="time-series-visualization"></div>
+            <script src="time_series/time_series.js"></script>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            const tabcontent = document.getElementsByClassName("tab");
+            for (let i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.add("hidden");
+            }
+            const tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("bg-blue-600");
+                tablinks[i].classList.add("bg-blue-500");
+            }
+            document.getElementById(tabName).classList.remove("hidden");
+            evt.currentTarget.classList.remove("bg-blue-500");
+            evt.currentTarget.classList.add("bg-blue-600");
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementsByClassName("tablinks")[0].click();
+        });
+    </script>
+</body>
+</html>
