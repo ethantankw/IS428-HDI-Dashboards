@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master Visualization Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body class="bg-gray-100 font-sans">
     <div class="container mx-auto p-6">
@@ -19,22 +19,19 @@
 
         <div id="tableau" class="tab hidden">
             <h2 class="text-2xl font-semibold"></h2>
-            <iframe src="tableau/tableau.html" width="1200px" height="1000px" class="border"></iframe>
+            <iframe src="tableau/tableau.html" width="1500px" height="1000px" class="border"></iframe>
         </div>        
 
         <div id="linear-regression" class="tab hidden">
             <h2 class="text-2xl font-semibold">Linear Regression Visualization</h2>
-        
             <div id="predicted-vs-actual">
                 <h3 class="text-xl">Predicted vs Actual HDI</h3>
                 <div id="predicted-vs-actual-plot"></div>
             </div>
-        
             <div id="scatter-plot-matrix">
                 <h3 class="text-xl">Scatter Plot Matrix</h3>
                 <div id="scatter-plot"></div>
             </div>
-        
             <script src="linear_regression/linear_regression.js"></script>
         </div>        
 
@@ -46,7 +43,12 @@
 
         <div id="time-series" class="tab hidden">
             <h2 class="text-2xl font-semibold">Time Series Prediction Visualization</h2>
-            <div id="time-series-visualization"></div>
+            <div id="country-select" class="mb-4">
+                <label for="country-dropdown" class="text-lg text-gray-700">Select Country</label>
+                <div id="country-dropdown-container"></div>
+            </div>
+            <div id="time-series-plots" class="grid grid-cols-1 gap-4">
+            </div>
             <script src="time_series/time_series.js"></script>
         </div>
     </div>

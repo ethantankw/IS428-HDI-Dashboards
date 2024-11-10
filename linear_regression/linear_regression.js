@@ -96,6 +96,46 @@ document.addEventListener("DOMContentLoaded", () => {
                .on("mouseout", () => {
                    tooltip.style("visibility", "hidden");
                });
+
+           // Create color legend for each plot
+           const legendHeight = 20, legendWidth = 200;
+           const legend = plotContainer.append('div')
+               .attr('class', 'legend')
+               .style('width', `${legendWidth}px`)
+               .style('height', `${legendHeight}px`)
+               .style('margin', '20px 0');
+
+           const colorLegendScale = d3.scaleLinear()
+               .domain([0, d3.max(data, d => d['Human Development Index (value)'])])
+               .range([0, legendWidth]);
+
+           const colorLegendAxis = d3.axisBottom(colorLegendScale)
+               .ticks(5)
+               .tickSize(10);
+
+           const legendSvg = legend.append('svg')
+               .attr('width', legendWidth)
+               .attr('height', legendHeight);
+
+           legendSvg.append('g')
+               .attr('transform', `translate(0, 10)`)
+               .call(colorLegendAxis);
+
+           legendSvg.selectAll('rect')
+               .data(colorLegendScale.ticks(5))
+               .enter()
+               .append('rect')
+               .attr('x', d => colorLegendScale(d))
+               .attr('y', 0)
+               .attr('width', colorLegendScale.range()[1] / 5)
+               .attr('height', legendHeight)
+               .attr('fill', d => colorScale(d));
+
+           // Add a label for the color legend
+           legend.append('p')
+               .text('Color represents HDI value')
+               .style('text-align', 'center')
+               .style('font-size', '12px');
        });
    }
 
@@ -146,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
            .style("font-size", "12px")
            .text("Predicted HDI");
 
-       const colorScale = d3.scaleSequential(d3.interpolateCool)
+       const colorScale = d3.scaleSequential(d3.interpolateViridis)
            .domain([0, d3.max(data, d => d['Predicted HDI'])]);
 
        svg.selectAll("circle")
@@ -169,5 +209,46 @@ document.addEventListener("DOMContentLoaded", () => {
            .on("mouseout", () => {
                tooltip.style("visibility", "hidden");
            });
+
+       // Create color legend for Actual vs Predicted plot
+       const legendHeight = 20, legendWidth = 200;
+       const legend = d3.select('#predicted-vs-actual-plot')
+           .append('div')
+           .attr('class', 'legend')
+           .style('width', `${legendWidth}px`)
+           .style('height', `${legendHeight}px`)
+           .style('margin', '20px 0');
+
+       const colorLegendScale = d3.scaleLinear()
+           .domain([0, d3.max(data, d => d['Predicted HDI'])])
+           .range([0, legendWidth]);
+
+       const colorLegendAxis = d3.axisBottom(colorLegendScale)
+           .ticks(5)
+           .tickSize(10);
+
+       const legendSvg = legend.append('svg')
+           .attr('width', legendWidth)
+           .attr('height', legendHeight);
+
+       legendSvg.append('g')
+           .attr('transform', `translate(0, 10)`)
+           .call(colorLegendAxis);
+
+       legendSvg.selectAll('rect')
+           .data(colorLegendScale.ticks(5))
+           .enter()
+           .append('rect')
+           .attr('x', d => colorLegendScale(d))
+           .attr('y', 0)
+           .attr('width', colorLegendScale.range()[1] / 5)
+           .attr('height', legendHeight)
+           .attr('fill', d => colorScale(d));
+
+       // Add a label for the color legend
+       legend.append('p')
+           .text('Color represents Predicted HDI')
+           .style('text-align', 'center')
+           .style('font-size', '12px');
    }
 });

@@ -9,9 +9,16 @@
 </head>
 <body class="bg-gray-100 font-sans">
     <div class="container mx-auto p-6">
-        <h1 class="text-3xl font-bold mb-6">Time Series Prediction Visualization</h1>
-        <div id="time-series-visualization" class="border border-gray-300 p-4"></div>
-        <script src="time_series.js"></script>
+        <h1 class="text-3xl font-bold mb-6 text-center">Time Series Prediction Visualization</h1>
+        
+        <div id="country-select" class="mb-4 text-center">
+            <label for="country-dropdown" class="text-lg font-semibold text-gray-700">Select a Country: </label>
+        </div>
+        
+        <div id="time-series-plots" class="flex justify-center items-center">
+        </div>
     </div>
+
+    <script src="time_series.js"></script>
 </body>
 </html>
