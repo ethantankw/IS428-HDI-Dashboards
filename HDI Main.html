@@ -26,27 +26,27 @@
         </div>        
 
         <div id="linear-regression" class="tab hidden">
-            <h2 class="text-2xl font-semibold">Linear Regression Visualization</h2>
+            <h2 class="text-2xl font-semibold flex justify-center items-center">Linear Regression Visualization</h2>
+            <div id="scatter-plot-matrix" class="mb-100">
+                <h3 class="text-xl flex justify-center items-center">Scatter Plot Matrix</h3>
+                <div id="scatter-plot" class="flex justify-center items-center"></div>
+            </div>
             <div id="predicted-vs-actual">
-                <h3 class="text-xl">Predicted vs Actual HDI</h3>
-                <div id="predicted-vs-actual-plot"></div>
-            </div>
-            <div id="scatter-plot-matrix">
-                <h3 class="text-xl">Scatter Plot Matrix</h3>
-                <div id="scatter-plot"></div>
-            </div>
+                <h3 class="text-xl text-center mb-6 mt-24">Predicted vs Actual HDI</h3>
+                <div id="predicted-vs-actual-plot" class="flex justify-center items-center"></div>
+            </div>            
             <script src="linear_regression/linear_regression.js"></script>
         </div>        
 
         <div id="clustering" class="tab hidden">
-            <h2 class="text-2xl font-semibold">Clustering Visualization</h2>
-            <div id="clustering-visualization"></div>
+            <h2 class="text-2xl font-semibold flex justify-center items-center margin-top:100px">Clustering Visualization</h2>
+            <div id="clustering-visualization" class="flex justify-center items-center"></div>
             <script src="clustering/clustering.js"></script>
         </div>
 
         <div id="time-series" class="tab hidden">
-            <h2 class="text-2xl font-semibold">Time Series Prediction Visualization</h2>
-            <div id="country-select" class="mb-4">
+            <h2 class="text-2xl font-semibold flex justify-center items-center">Time Series Prediction Visualization</h2>
+            <div id="country-select" class="mb-1">
                 <label for="country-dropdown" class="text-lg text-gray-700 flex justify-center items-center">Select Country</label>
                 <div id="country-dropdown-container"></div>
             </div>
