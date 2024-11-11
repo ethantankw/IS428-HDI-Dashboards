@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 .style('display', 'flex')
                 .style('justify-content', 'center')
                 .style('align-items', 'center')
-                .style('height', '60vh')
+                .style('height', '70vh')
                 .append('svg')
                 .attr('width', width)
                 .attr('height', height);

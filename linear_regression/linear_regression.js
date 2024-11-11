@@ -47,6 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const plotContainer = d3.select('#scatter-plot')
             .append('div')
             .attr('class', 'plot');
+        plotContainer.append("h3")
+            .text(`HDI vs. ${feature}`)
+            .style("text-align", "center")
+            .style("text-anchor", "middle")
+            .style("font-size", "16px")
+            .style("font-weight", "bold")
+            .style("margin-bottom", "10px");
         const svg = plotContainer.append('svg')
             .attr('width', width)
             .attr('height', height);
@@ -103,7 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 tooltip.style("visibility", "hidden");
             });
 
-        // Color Legend based on your example
         const legendHeight = 20, legendWidth = 200;
         const legend = plotContainer.append('div')
             .attr('class', 'legend')
@@ -190,12 +196,10 @@ function createActualVsPredictedPlot(data) {
         .style("font-size", "12px")
         .text("Predicted HDI");
 
-    // Calculate the absolute difference between actual and predicted HDI
     const maxDiff = d3.max(data, d => Math.abs(d['Human Development Index (value)'] - d['Predicted HDI']));
 
-    // Color scale based on the absolute difference
     const colorScale = d3.scaleSequential(d3.interpolateRdYlGn)
-        .domain([0, maxDiff]); // Range from 0 (smallest difference) to the max difference
+        .domain([0, maxDiff]);
 
     svg.selectAll("circle")
         .data(data)
