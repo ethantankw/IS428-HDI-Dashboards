@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20224.22.1117.1841                               -->
-<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
@@ -19,6 +19,7 @@
     <WindowsPersistSimpleIdentifiers />
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
+  <repository-location id='IS428Project_17315151894370' path='/workbooks' revision='1.1' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -33,19 +34,19 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='Human Development Index Data' name='webdata-direct.06wikj2127ddiu19pf07118maihi'>
-            <connection ACCESSTOKEN='' APIVersion='' CLIENTID='' CLIENTSECRET='' REDIRECT_URI='' REFRESHTOKEN='' SCOPE='' access-token-expires-in='' access-token-issue-time='' authType='none' authentication='no' channel='https' class='webdata-direct' connectionName='Human Development Index Data' filename='api_extractor_wdc.html' id-token='' increment-key='' oauth-client='' path='/IMF-World-Bank-Tableau-WDC/' port='443' scriptVersion='' secondary_whitelist='' server='ethantankw7.github.io' urlQuery='' username='' usernameAlias='' />
+            <connection ACCESSTOKEN='' APIVersion='' CLIENTID='' CLIENTSECRET='' REDIRECT_URI='' REFRESHTOKEN='' SCOPE='' access-token-expires-in='' access-token-issue-time='' authType='none' authentication='no' channel='https' class='webdata-direct' connectionName='Human Development Index Data' filename='api_extractor_wdc.html' id-token='' increment-key='' oauth-client='' path='/IMF-World-Bank-Tableau-WDC/' port='443' scriptVersion='' secondary_whitelist='' server='ethantankw7.github.io' server-oauth='' urlQuery='' username='' usernameAlias='' workgroup-auth-mode='prompt' />
           </named-connection>
           <named-connection caption='final_merged (new)' name='excel-direct.0v5x64u0yrg5kt124mvt21ua8q6f'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ethan/OneDrive/Desktop/SMU/Y3S1/IS428/IS428-HDI-Dashboards/final_merged (new).xlsx' interpretationMode='0' password='' server='' validate='no' />
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='Data/IS428-HDI-Dashboards/final_merged (new).xlsx' interpretationMode='0' password='' server='' server-oauth='' server-userid='3374225' validate='no' workgroup-auth-mode='prompt' />
           </named-connection>
           <named-connection caption='conflicts (new)' name='excel-direct.1r5c33o0ol0zs21gg1h9y10431xo'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ethan/OneDrive/Desktop/SMU/Y3S1/IS428/IS428-HDI-Dashboards/conflicts (new).xlsx' interpretationMode='0' password='' server='' validate='no' />
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='Data/IS428-HDI-Dashboards/conflicts (new).xlsx' interpretationMode='0' password='' server='' server-oauth='' server-userid='3374225' validate='no' workgroup-auth-mode='prompt' />
           </named-connection>
           <named-connection caption='disasters' name='excel-direct.0mvp5tt03dv6mm1b8tz760uqbwl2'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ethan/OneDrive/Desktop/SMU/Y3S1/IS428/IS428-HDI-Dashboards/disasters.xlsx' interpretationMode='0' password='' server='' validate='no' />
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='Data/IS428-HDI-Dashboards/disasters.xlsx' interpretationMode='0' password='' server='' server-oauth='' server-userid='3374225' validate='no' workgroup-auth-mode='prompt' />
           </named-connection>
           <named-connection caption='hdi' name='excel-direct.06r334i1trlzqg1cczfqj1dsv6ma'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ethan/OneDrive/Desktop/SMU/Y3S1/IS428/IS428-HDI-Dashboards/hdi.xlsx' interpretationMode='0' password='' server='' validate='no' />
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='Data/IS428-HDI-Dashboards/hdi.xlsx' interpretationMode='0' password='' server='' server-oauth='' server-userid='3374225' validate='no' workgroup-auth-mode='prompt' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='left' type='join'>
@@ -1452,13 +1453,22 @@
       <column datatype='string' name='[Country (Sheet11)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
       <column datatype='string' name='[Country (Sheet12)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
       <column datatype='string' name='[Country (Sheet5)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
-      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <semantic-values semantic-role='[Country].[Name]'>
+          <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+          <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+          <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+        </semantic-values>
+      </column>
       <column datatype='string' name='[Disaster Group]' role='dimension' type='nominal' />
       <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
       <column caption='Income Group' datatype='string' name='[IncomeGroup]' role='dimension' type='nominal' />
       <column caption='Measure Values' datatype='real' name='[Multiple Values]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[No. Injured]' role='measure' type='quantitative' />
       <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Total Affected]' role='measure' type='quantitative' />
       <column datatype='integer' name='[Total Damage, Adjusted (&apos;000 US$)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total Deaths (Sheet12)]' role='measure' type='quantitative' />
       <column datatype='integer' name='[Year (Sheet11)]' role='dimension' type='quantitative' />
       <column datatype='integer' name='[Year (Sheet12)]' role='dimension' type='quantitative' />
       <column datatype='integer' name='[Year (Sheet5)]' role='dimension' type='quantitative' />
@@ -1489,14 +1499,18 @@
       <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
       <column-instance column='[Disaster Group]' derivation='None' name='[none:Disaster Group:nk]' pivot='key' type='nominal' />
       <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[No. Injured]' derivation='Sum' name='[sum:No. Injured:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Affected]' derivation='Sum' name='[sum:Total Affected:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Deaths (Sheet12)]' derivation='Sum' name='[sum:Total Deaths (Sheet12):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_no_affected]' derivation='Sum' name='[sum:total_no_affected:qk]' pivot='key' type='quantitative' />
       <group caption='Action (Country,Region)' hidden='true' name='[Action (Country,Region)]' name-style='unqualified' user:auto-column='sheet_link'>
         <groupfilter function='crossjoin'>
           <groupfilter function='level-members' level='[Country]' />
           <groupfilter function='level-members' level='[Region]' />
         </groupfilter>
       </group>
-      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Datasources/federated.05m1h8z1r5krpn13xrctk13n9bxn_0wy18x00wvh99r0zjylqx0pirc16.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='11/13/2024 04:57:30 AM' username='tableau_internal_user'>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='false' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Datasources/federated.05m1h8z1r5krpn13xrctk13n9bxn_0wy18x00wvh99r0zjylqx0pirc16.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747' table='[Extract].[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]' type='table' />
           <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
             <relation name='hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF' table='[Extract].[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]' type='table' />
@@ -1570,9 +1584,6 @@
             <map key='[total_no_affected]' value='[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747].[total_no_affected]' />
             <map key='[unemployment]' value='[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF].[unemployment]' />
           </cols>
-          <refresh>
-            <refresh-event add-from-file-path='Human Development Index Data' increment-value='%null%' refresh-type='create' rows-inserted='20862' timestamp-start='2024-11-13 04:57:22.161' />
-          </refresh>
           <metadata-records>
             <metadata-record class='column'>
               <remote-name>country</remote-name>
@@ -1587,7 +1598,6 @@
               <approx-count>118</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>countryiso3code</remote-name>
@@ -1602,7 +1612,6 @@
               <approx-count>118</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>date</remote-name>
@@ -1616,7 +1625,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>23</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>public_debt</remote-name>
@@ -1630,7 +1638,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1492</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>gender_inequality</remote-name>
@@ -1644,7 +1651,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>663</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>electricity_access</remote-name>
@@ -1658,7 +1664,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>530</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>poverty_headcount</remote-name>
@@ -1672,7 +1677,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>174</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>school_enrollment</remote-name>
@@ -1686,7 +1690,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>2275</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>employment_ratio</remote-name>
@@ -1700,7 +1703,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1600</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>gdp</remote-name>
@@ -1714,7 +1716,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>2547</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>unemployment</remote-name>
@@ -1728,7 +1729,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1579</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>life_expectancy</remote-name>
@@ -1742,7 +1742,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1905</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>infant_mortality</remote-name>
@@ -1756,7 +1755,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>763</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>maternal_mortality</remote-name>
@@ -1770,7 +1768,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>485</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>poverty_rate</remote-name>
@@ -1784,7 +1781,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>174</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>access_to_electricity</remote-name>
@@ -1798,7 +1794,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>529</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>employment_population_ratio</remote-name>
@@ -1812,7 +1807,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1831</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hdiFactors_B6968BD4F63644F99B45B80CEA58B3AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Country3</remote-name>
@@ -1827,7 +1821,6 @@
               <approx-count>249</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RSG_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Region</remote-name>
@@ -1842,7 +1835,6 @@
               <approx-count>7</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RSG_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>IncomeGroup</remote-name>
@@ -1857,7 +1849,6 @@
               <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RSG_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Year3</remote-name>
@@ -1871,7 +1862,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>33</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Human Development Index (value)1</remote-name>
@@ -1885,7 +1875,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1080</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>HDI Rank1</remote-name>
@@ -1899,7 +1888,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>129</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Expected Years of Schooling (years)1</remote-name>
@@ -1913,7 +1901,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>2943</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Mean Years of Schooling (years)1</remote-name>
@@ -1927,7 +1914,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>2854</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Gender Development Index (value)1</remote-name>
@@ -1941,7 +1927,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>507</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Gross National Income Per Capita (2017 PPP$)1</remote-name>
@@ -1955,7 +1940,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>3421</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Life Expectancy at Birth (years)1</remote-name>
@@ -1969,7 +1953,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>3369</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Planetary pressures–adjusted Human Development Index (value)1</remote-name>
@@ -1983,7 +1966,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>798</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Carbon dioxide emissions per capita (production) (tonnes)1</remote-name>
@@ -1997,7 +1979,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>2763</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>AID Contribution (&apos;000 US$)1</remote-name>
@@ -2011,7 +1992,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>508</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Total Deaths1</remote-name>
@@ -2025,7 +2005,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>950</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>No. Injured1</remote-name>
@@ -2039,7 +2018,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>875</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>No. Affected1</remote-name>
@@ -2053,7 +2031,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1928</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>No. Homeless1</remote-name>
@@ -2067,7 +2044,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>570</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Total Affected1</remote-name>
@@ -2081,7 +2057,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>2290</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Total Damage, Adjusted (&apos;000 US$)1</remote-name>
@@ -2095,7 +2070,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1166</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Disaster Group1</remote-name>
@@ -2110,7 +2084,6 @@
               <approx-count>4</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RSG_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Disaster Type1</remote-name>
@@ -2125,7 +2098,6 @@
               <approx-count>1362</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RSG_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Best Fatalities Estimate</remote-name>
@@ -2139,7 +2111,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>796</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Country</remote-name>
@@ -2154,7 +2125,6 @@
               <approx-count>129</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RSG_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Year</remote-name>
@@ -2168,7 +2138,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>40</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>no_of_conflicts</remote-name>
@@ -2182,7 +2151,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>536</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>total_no_affected</remote-name>
@@ -2196,7 +2164,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>796</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Country1</remote-name>
@@ -2211,7 +2178,6 @@
               <approx-count>241</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RSG_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Disaster Group</remote-name>
@@ -2226,7 +2192,6 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RSG_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Disaster Type</remote-name>
@@ -2241,7 +2206,6 @@
               <approx-count>28</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RSG_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>AID Contribution (&apos;000 US$)</remote-name>
@@ -2255,7 +2219,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>945</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Year1</remote-name>
@@ -2269,7 +2232,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>24</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Total Deaths</remote-name>
@@ -2283,7 +2245,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>310</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>No. Injured</remote-name>
@@ -2297,7 +2258,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>331</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>No. Affected</remote-name>
@@ -2311,7 +2271,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1339</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>No. Homeless</remote-name>
@@ -2325,7 +2284,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>420</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Total Affected</remote-name>
@@ -2339,7 +2297,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1609</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Total Damage, Adjusted (&apos;000 US$)</remote-name>
@@ -2353,7 +2310,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1806</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Country2</remote-name>
@@ -2368,7 +2324,6 @@
               <approx-count>249</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RSG_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Year2</remote-name>
@@ -2382,7 +2337,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>33</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Human Development Index (value)</remote-name>
@@ -2396,7 +2350,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1080</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>HDI Rank</remote-name>
@@ -2410,7 +2363,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>129</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Expected Years of Schooling (years)</remote-name>
@@ -2424,7 +2376,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>2943</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Mean Years of Schooling (years)</remote-name>
@@ -2438,7 +2389,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>2854</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Gender Development Index (value)</remote-name>
@@ -2452,7 +2402,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>507</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Gross National Income Per Capita (2017 PPP$)</remote-name>
@@ -2466,7 +2415,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>3421</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Life Expectancy at Birth (years)</remote-name>
@@ -2480,7 +2428,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>3369</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Planetary pressures–adjusted Human Development Index (value)</remote-name>
@@ -2494,7 +2441,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>798</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Carbon dioxide emissions per capita (production) (tonnes)</remote-name>
@@ -2508,7 +2454,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>2763</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C8B5BDA5D5224700AA5FEBF3B3F34747]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -3107,6 +3052,18 @@
             <map to='#4e79a7'>
               <bucket>&quot;[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:Human Development Index (value):qk]&quot;</bucket>
             </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:Total Deaths (Sheet12):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:Total Affected:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:total_no_affected:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:No. Injured:qk]&quot;</bucket>
+            </map>
             <map to='#f28e2b'>
               <bucket>&quot;[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:Total Damage, Adjusted (&apos;000 US$):qk]&quot;</bucket>
             </map>
@@ -3295,14 +3252,6 @@
     <mapsource name='Tableau' />
   </mapsources>
   <actions>
-    <action caption='Filter 10 (generated)' name='[Action10_B261DC3FDAB040E79EC0ECE29563B216]'>
-      <activation auto-clear='true' type='on-select' />
-      <source dashboard='Wealth Dashboard' type='sheet' worksheet='Carbon Dioxide Emissions per Capita (Region)' />
-      <command command='tsc:tsl-filter'>
-        <param name='special-fields' value='all' />
-        <param name='target' value='Wealth Dashboard' />
-      </command>
-    </action>
     <action caption='Filter 11 (generated)' name='[Action11_F7A9F7BB825044EDA8F823C8ADC39EFD]'>
       <activation auto-clear='true' type='on-select' />
       <source dashboard='Wealth Dashboard' type='sheet' worksheet='Employment to Population Ratio (Country)' />
@@ -3325,22 +3274,6 @@
       <command command='tsc:tsl-filter'>
         <param name='special-fields' value='all' />
         <param name='target' value='Disaster Dashboard' />
-      </command>
-    </action>
-    <action caption='Filter 1 (generated)' name='[Action1_29F3B53571884E3EA625CDB3C6259830]'>
-      <activation auto-clear='true' type='on-select' />
-      <source dashboard='Conflicts Dashboard' type='sheet' worksheet='Conflict (Country)' />
-      <command command='tsc:tsl-filter'>
-        <param name='special-fields' value='all' />
-        <param name='target' value='Conflicts Dashboard' />
-      </command>
-    </action>
-    <action caption='Filter 2 (generated)' name='[Action2_2045D95004194764B5BCF541EE9F20C7]'>
-      <activation auto-clear='true' type='on-select' />
-      <source dashboard='Conflicts Dashboard' type='sheet' worksheet='Poverty Rate' />
-      <command command='tsc:tsl-filter'>
-        <param name='special-fields' value='all' />
-        <param name='target' value='Conflicts Dashboard' />
       </command>
     </action>
     <action caption='Filter 3 (generated)' name='[Action3_739D478000E048549FFED986D33F12F6]'>
@@ -3375,28 +3308,12 @@
         <param name='target' value='Health Dashboard' />
       </command>
     </action>
-    <action caption='Filter 7 (generated)' name='[Action7_1A6151DB1BBF444295CA22D5F3B176C6]'>
-      <activation auto-clear='true' type='on-select' />
-      <source dashboard='Education Dashboard' type='sheet' worksheet='Unemployment Rate (Region)' />
-      <command command='tsc:tsl-filter'>
-        <param name='special-fields' value='all' />
-        <param name='target' value='Education Dashboard' />
-      </command>
-    </action>
     <action caption='Filter 8 (generated)' name='[Action8_34A68342C19C47529B975F7D5DC849F9]'>
       <activation auto-clear='true' type='on-select' />
-      <source dashboard='Education Dashboard' type='sheet' worksheet='Mean Years of School (Region)' />
+      <source dashboard='Policies Dashboard' type='sheet' worksheet='Mean Years of School (Region)' />
       <command command='tsc:tsl-filter'>
         <param name='special-fields' value='all' />
-        <param name='target' value='Education Dashboard' />
-      </command>
-    </action>
-    <action caption='Filter 9 (generated)' name='[Action9_2B05E3ED8C8647A6A762068E768A1732]'>
-      <activation auto-clear='true' type='on-select' />
-      <source dashboard='Wealth Dashboard' type='sheet' worksheet='GDP (Region)' />
-      <command command='tsc:tsl-filter'>
-        <param name='special-fields' value='all' />
-        <param name='target' value='Wealth Dashboard' />
+        <param name='target' value='Policies Dashboard' />
       </command>
     </action>
   </actions>
@@ -3411,7 +3328,13 @@
             <mapsource name='Tableau' />
           </mapsources>
           <datasource-dependencies datasource='federated.05m1h8z1r5krpn13xrctk13n9bxn'>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[electricity_access]' derivation='Avg' name='[avg:electricity_access:qk]' pivot='key' type='quantitative' />
             <column caption='Access to Electricity (% of population)' datatype='real' name='[electricity_access]' role='measure' type='quantitative' />
@@ -3472,7 +3395,13 @@
           </datasources>
           <datasource-dependencies datasource='federated.05m1h8z1r5krpn13xrctk13n9bxn'>
             <column datatype='integer' name='[AID Contribution (&apos;000 US$)]' role='measure' type='quantitative' />
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='string' name='[Disaster Group]' role='dimension' type='nominal' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[AID Contribution (&apos;000 US$)]' derivation='Avg' name='[avg:AID Contribution (&apos;000 US$):qk]' pivot='key' type='quantitative' />
@@ -3550,7 +3479,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
@@ -3615,7 +3550,13 @@
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
             <column datatype='real' name='[Carbon dioxide emissions per capita (production) (tonnes)]' role='measure' type='quantitative' />
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[Calculation_187180873276198912]' derivation='Avg' name='[avg:Calculation_187180873276198912:qk]' pivot='key' type='quantitative' />
@@ -3623,6 +3564,7 @@
             <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
             <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
+          <filter class='quantitative' column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:Calculation_187180873276198912:qk]' included-values='non-null' />
           <filter class='categorical' column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]'>
             <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
               <groupfilter function='member' level='[none:Country:nk]' member='&quot;Afghanistan&quot;' />
@@ -3836,6 +3778,7 @@
           <slices>
             <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]</column>
             <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]</column>
+            <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:Calculation_187180873276198912:qk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -3869,7 +3812,13 @@
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
             <column datatype='real' name='[Carbon dioxide emissions per capita (production) (tonnes)]' role='measure' type='quantitative' />
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[Calculation_187180873276198912]' derivation='Avg' name='[avg:Calculation_187180873276198912:qk]' pivot='key' type='quantitative' />
@@ -4124,7 +4073,13 @@
             <datasource caption='Human Development Index Data' name='federated.05m1h8z1r5krpn13xrctk13n9bxn' />
           </datasources>
           <datasource-dependencies datasource='federated.05m1h8z1r5krpn13xrctk13n9bxn'>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column caption='No Of Conflicts' datatype='integer' name='[no_of_conflicts]' role='measure' type='quantitative' />
             <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
@@ -4365,7 +4320,13 @@
             <mapsource name='Tableau' />
           </mapsources>
           <datasource-dependencies datasource='federated.05m1h8z1r5krpn13xrctk13n9bxn'>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='string' name='[Disaster Group]' role='dimension' type='nominal' />
             <column datatype='integer' name='[Total Affected]' role='measure' type='quantitative' />
             <column-instance column='[Total Affected]' derivation='Avg' name='[avg:Total Affected:qk]' pivot='key' type='quantitative' />
@@ -4485,7 +4446,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[Calculation_187180873276198912]' derivation='Avg' name='[avg:Calculation_187180873276198912:qk]' pivot='key' type='quantitative' />
@@ -4494,6 +4461,7 @@
             <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
             <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
+          <filter class='quantitative' column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:employment_ratio:qk]' included-values='non-null' />
           <filter class='categorical' column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' filter-group='10'>
             <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
               <groupfilter function='member' level='[none:Country:nk]' member='&quot;Afghanistan&quot;' />
@@ -4707,6 +4675,7 @@
           <slices>
             <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]</column>
             <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]</column>
+            <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:employment_ratio:qk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -4739,7 +4708,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[Calculation_187180873276198912]' derivation='Avg' name='[avg:Calculation_187180873276198912:qk]' pivot='key' type='quantitative' />
@@ -4797,7 +4772,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[Calculation_187180873276198912]' derivation='Avg' name='[avg:Calculation_187180873276198912:qk]' pivot='key' type='quantitative' />
@@ -4806,6 +4787,7 @@
             <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
             <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
+          <filter class='quantitative' column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:gdp:qk]' included-values='non-null' />
           <filter class='categorical' column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]'>
             <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
               <groupfilter function='member' level='[none:Country:nk]' member='&quot;Afghanistan&quot;' />
@@ -5019,6 +5001,7 @@
           <slices>
             <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]</column>
             <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]</column>
+            <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:gdp:qk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -5051,7 +5034,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[Calculation_187180873276198912]' derivation='Avg' name='[avg:Calculation_187180873276198912:qk]' pivot='key' type='quantitative' />
@@ -5310,7 +5299,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Gross National Income Per Capita (2017 PPP$)]' role='measure' type='quantitative' />
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column-instance column='[Calculation_187180873276198912]' derivation='Avg' name='[avg:Calculation_187180873276198912:qk]' pivot='key' type='quantitative' />
@@ -5552,7 +5547,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Gross National Income Per Capita (2017 PPP$)]' role='measure' type='quantitative' />
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
@@ -5714,7 +5715,13 @@
             <datasource caption='Human Development Index Data' name='federated.05m1h8z1r5krpn13xrctk13n9bxn' />
           </datasources>
           <datasource-dependencies datasource='federated.05m1h8z1r5krpn13xrctk13n9bxn'>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
@@ -5820,7 +5827,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[Calculation_187180873276198912]' derivation='Avg' name='[avg:Calculation_187180873276198912:qk]' pivot='key' type='quantitative' />
@@ -5829,6 +5842,7 @@
             <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
             <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
+          <filter class='quantitative' column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:infant_mortality:qk]' included-values='non-null' />
           <filter class='categorical' column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' filter-group='5'>
             <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
               <groupfilter function='member' level='[none:Country:nk]' member='&quot;Afghanistan&quot;' />
@@ -6042,6 +6056,7 @@
           <slices>
             <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]</column>
             <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]</column>
+            <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:infant_mortality:qk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -6075,7 +6090,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[Calculation_187180873276198912]' derivation='Avg' name='[avg:Calculation_187180873276198912:qk]' pivot='key' type='quantitative' />
@@ -6134,7 +6155,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[Calculation_187180873276198912]' derivation='Avg' name='[avg:Calculation_187180873276198912:qk]' pivot='key' type='quantitative' />
@@ -6143,6 +6170,7 @@
             <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
             <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
+          <filter class='quantitative' column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:life_expectancy:qk]' included-values='non-null' />
           <filter class='categorical' column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' filter-group='5'>
             <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
               <groupfilter function='member' level='[none:Country:nk]' member='&quot;Afghanistan&quot;' />
@@ -6356,6 +6384,7 @@
           <slices>
             <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]</column>
             <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]</column>
+            <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:life_expectancy:qk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -6390,7 +6419,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[Calculation_187180873276198912]' derivation='Avg' name='[avg:Calculation_187180873276198912:qk]' pivot='key' type='quantitative' />
@@ -6449,7 +6484,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[Calculation_187180873276198912]' derivation='Avg' name='[avg:Calculation_187180873276198912:qk]' pivot='key' type='quantitative' />
@@ -6458,6 +6499,7 @@
             <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
             <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
+          <filter class='quantitative' column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:maternal_mortality:qk]' included-values='non-null' />
           <filter class='categorical' column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' filter-group='5'>
             <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
               <groupfilter function='member' level='[none:Country:nk]' member='&quot;Afghanistan&quot;' />
@@ -6671,6 +6713,7 @@
           <slices>
             <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]</column>
             <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]</column>
+            <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:maternal_mortality:qk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -6704,7 +6747,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[Calculation_187180873276198912]' derivation='Avg' name='[avg:Calculation_187180873276198912:qk]' pivot='key' type='quantitative' />
@@ -6763,7 +6812,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='real' name='[Mean Years of Schooling (years)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
@@ -7018,7 +7073,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='real' name='[Mean Years of Schooling (years)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
@@ -7072,6 +7133,71 @@
       </table>
       <simple-id uuid='{C1BDFD4B-208F-40EF-954C-5A4618132975}' />
     </worksheet>
+    <worksheet name='Number of Conflicts vs Affected Population (Country)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of Conflicts vs Affected Population (Country)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Human Development Index Data' name='federated.05m1h8z1r5krpn13xrctk13n9bxn' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.05m1h8z1r5krpn13xrctk13n9bxn'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='No Of Conflicts' datatype='integer' name='[no_of_conflicts]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[no_of_conflicts]' derivation='Sum' name='[sum:no_of_conflicts:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_no_affected]' derivation='Sum' name='[sum:total_no_affected:qk]' pivot='key' type='quantitative' />
+            <column caption='Total No Affected' datatype='integer' name='[total_no_affected]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[Longitude (generated)]' field-type='quantitative' max='20423445.515333176' min='-13566443.936017618' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[Latitude (generated)]' field-type='quantitative' max='19770685.67012094' min='-17583391.67683208' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:total_no_affected:qk]' />
+              <lod column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' />
+              <color column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:no_of_conflicts:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.6811602115631104' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[Latitude (generated)]</rows>
+        <cols>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{AB4EC918-FAFC-4A87-82BA-1B395A7A47A3}' />
+    </worksheet>
     <worksheet name='Poverty Rate'>
       <table>
         <view>
@@ -7082,7 +7208,13 @@
             <mapsource name='Tableau' />
           </mapsources>
           <datasource-dependencies datasource='federated.05m1h8z1r5krpn13xrctk13n9bxn'>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[poverty_rate]' derivation='Avg' name='[avg:poverty_rate:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
@@ -7094,14 +7226,23 @@
               <groupfilter function='level-members' level='[Region]' />
             </groupfilter>
           </filter>
+          <filter class='quantitative' column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[Longitude (generated)]' included-values='non-null' />
           <slices>
             <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[Action (Country,Region)]</column>
+            <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[Latitude (generated)]</column>
+            <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[Longitude (generated)]</column>
           </slices>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:poverty_rate:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' value='false' />
           </style-rule>
           <style-rule element='map'>
             <format attr='washout' value='0.0' />
@@ -7135,77 +7276,83 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
             <column-instance column='[Calculation_187180873276198912]' derivation='Sum' name='[sum:Calculation_187180873276198912:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_no_affected]' derivation='Sum' name='[sum:total_no_affected:qk]' pivot='key' type='quantitative' />
+            <column caption='Total No Affected' datatype='integer' name='[total_no_affected]' role='measure' type='quantitative' />
           </datasource-dependencies>
           <filter class='quantitative' column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:Calculation_187180873276198912:qk]' included-values='non-null' />
-          <shelf-sorts>
-            <shelf-sort-v2 dimension-to-sort='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:Calculation_187180873276198912:qk]' shelf='columns' />
-          </shelf-sorts>
           <slices>
             <column>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:Calculation_187180873276198912:qk]</column>
           </slices>
           <aggregation value='true' />
         </view>
-        <style>
-          <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:Calculation_187180873276198912:qk]' field-type='quantitative' max='0.68553964285714286' min='0.14772571428571429' range-type='fixed' scope='rows' type='space' />
-          </style-rule>
-        </style>
+        <style />
         <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
-            <mark class='Automatic' />
+            <mark class='Shape' />
+            <encodings>
+              <lod column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
           </pane>
         </panes>
-        <rows>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:Calculation_187180873276198912:qk]</rows>
-        <cols>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]</cols>
+        <rows>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:total_no_affected:qk]</rows>
+        <cols />
       </table>
       <simple-id uuid='{62399DF4-F14D-44E0-8A0F-C07F733AB939}' />
     </worksheet>
-    <worksheet name='Sheet 31'>
+    <worksheet name='Sheet 32'>
       <table>
         <view>
           <datasources>
             <datasource caption='Human Development Index Data' name='federated.05m1h8z1r5krpn13xrctk13n9bxn' />
           </datasources>
-          <mapsources>
-            <mapsource name='Tableau' />
-          </mapsources>
           <datasource-dependencies datasource='federated.05m1h8z1r5krpn13xrctk13n9bxn'>
-            <column-instance column='[electricity_access]' derivation='Avg' name='[avg:electricity_access:qk]' pivot='key' type='quantitative' />
-            <column caption='Country1' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
-            <column caption='Access to Electricity (% of population)' datatype='real' name='[electricity_access]' role='measure' type='quantitative' />
-            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_no_affected]' derivation='Sum' name='[sum:total_no_affected:qk]' pivot='key' type='quantitative' />
+            <column caption='Total No Affected' datatype='integer' name='[total_no_affected]' role='measure' type='quantitative' />
           </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:total_no_affected:qk]' shelf='columns' />
+          </shelf-sorts>
           <aggregation value='true' />
         </view>
-        <style>
-          <style-rule element='map'>
-            <format attr='washout' value='0.0' />
-          </style-rule>
-        </style>
+        <style />
         <panes>
           <pane selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
-            <encodings>
-              <lod column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:country:nk]' />
-              <color column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:electricity_access:qk]' />
-              <geometry column='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[Geometry (generated)]' />
-            </encodings>
           </pane>
         </panes>
-        <rows>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[Latitude (generated)]</rows>
-        <cols>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[Longitude (generated)]</cols>
+        <rows>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:total_no_affected:qk]</rows>
+        <cols>[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]</cols>
       </table>
-      <simple-id uuid='{EA5F373F-AA06-453B-A947-9608328A436E}' />
+      <simple-id uuid='{5C9B39CA-8E2A-44A6-A3D8-5D63F54067CB}' />
     </worksheet>
     <worksheet name='Unemployment Rate (Country)'>
       <table>
@@ -7217,7 +7364,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[Calculation_187180873276198912]' derivation='Avg' name='[avg:Calculation_187180873276198912:qk]' pivot='key' type='quantitative' />
@@ -7471,7 +7624,13 @@
             <column caption='Average Human Development Index (Country)' datatype='real' name='[Calculation_187180873276198912]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='{ FIXED [Country] : SUM(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) } /&#13;&#10;{ FIXED [Country] : COUNT(IF [Human Development Index (value)] != 0 THEN [Human Development Index (value)] END) }' />
             </column>
-            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+                <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+                <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+              </semantic-values>
+            </column>
             <column datatype='real' name='[Human Development Index (value)]' role='measure' type='quantitative' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[Calculation_187180873276198912]' derivation='Avg' name='[avg:Calculation_187180873276198912:qk]' pivot='key' type='quantitative' />
@@ -7529,18 +7688,11 @@
     <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Conflicts Dashboard'>
       <style />
       <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
-      <datasources>
-        <datasource caption='Human Development Index Data' name='federated.05m1h8z1r5krpn13xrctk13n9bxn' />
-      </datasources>
-      <datasource-dependencies datasource='federated.05m1h8z1r5krpn13xrctk13n9bxn'>
-        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
-        <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
-      </datasource-dependencies>
       <zones>
         <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
           <zone h='97916' id='5' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
             <zone h='97916' id='3' type-v2='layout-basic' w='87115' x='586' y='1042'>
-              <zone h='97916' id='1' name='Conflict (Country)' w='43558' x='44143' y='1042'>
+              <zone h='97916' id='10' name='Average HDI (Country)' w='43558' x='586' y='1042'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -7548,15 +7700,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='48958' id='8' name='Poverty Rate' w='43557' x='586' y='50000'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='48958' id='10' name='Average HDI (Country)' w='43557' x='586' y='1042'>
+              <zone h='97916' id='24' name='Number of Conflicts vs Affected Population (Country)' w='43557' x='44144' y='1042'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -7566,7 +7710,7 @@
               </zone>
             </zone>
             <zone fixed-size='160' h='97916' id='4' is-fixed='true' param='vert' type-v2='layout-flow' w='11713' x='87701' y='1042'>
-              <zone h='38411' id='6' name='Conflict (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='filter' w='11713' x='87701' y='1042'>
+              <zone h='10547' id='13' name='Average HDI (Country)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:Calculation_187180873276198912:qk]' type-v2='color' w='11713' x='87701' y='1042'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -7574,23 +7718,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='38411' id='7' name='Conflict (Country)' pane-specification-id='2' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='color' w='11713' x='87701' y='39453'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='10547' id='9' name='Poverty Rate' pane-specification-id='2' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:poverty_rate:qk]' type-v2='color' w='11713' x='87701' y='77864'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='10547' id='13' name='Average HDI (Country)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:Calculation_187180873276198912:qk]' type-v2='color' w='11713' x='87701' y='88411'>
+              <zone h='10547' id='25' name='Number of Conflicts vs Affected Population (Country)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:no_of_conflicts:qk]' type-v2='color' w='11713' x='87701' y='11589'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -7610,11 +7738,11 @@
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
-          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='22' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
-                <zone fixed-size='280' h='48958' id='10' is-fixed='true' name='Average HDI (Country)' w='43557' x='586' y='1042'>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='28' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone fixed-size='280' h='97916' id='10' is-fixed='true' name='Average HDI (Country)' w='43558' x='586' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -7623,7 +7751,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='10547' id='13' name='Average HDI (Country)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:Calculation_187180873276198912:qk]' type-v2='color' w='11713' x='87701' y='88411'>
+                <zone h='10547' id='13' name='Average HDI (Country)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:Calculation_187180873276198912:qk]' type-v2='color' w='11713' x='87701' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -7632,7 +7760,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='38411' id='6' mode='checkdropdown' name='Conflict (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='filter' w='11713' x='87701' y='1042'>
+                <zone fixed-size='280' h='97916' id='24' is-fixed='true' name='Number of Conflicts vs Affected Population (Country)' w='43557' x='44144' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -7641,34 +7769,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='97916' id='1' is-fixed='true' name='Conflict (Country)' w='43558' x='44143' y='1042'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone h='38411' id='7' name='Conflict (Country)' pane-specification-id='2' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='color' w='11713' x='87701' y='39453'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='48958' id='8' is-fixed='true' name='Poverty Rate' w='43557' x='586' y='50000'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone h='10547' id='9' name='Poverty Rate' pane-specification-id='2' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:poverty_rate:qk]' type-v2='color' w='11713' x='87701' y='77864'>
+                <zone h='10547' id='25' name='Number of Conflicts vs Affected Population (Country)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:no_of_conflicts:qk]' type-v2='color' w='11713' x='87701' y='11589'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -7784,8 +7885,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='38' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='37' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='42' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='41' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
                 <zone h='22787' id='23' mode='checkdropdown' name='Disaster Group (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Disaster Group:nk]' type-v2='filter' w='11713' x='87701' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -7871,172 +7972,6 @@
       </devicelayouts>
       <simple-id uuid='{A6AD148C-7F1C-4F0A-B97F-6A3FDEA6A21B}' />
     </dashboard>
-    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Education Dashboard'>
-      <style />
-      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
-      <datasources>
-        <datasource caption='Human Development Index Data' name='federated.05m1h8z1r5krpn13xrctk13n9bxn' />
-      </datasources>
-      <datasource-dependencies datasource='federated.05m1h8z1r5krpn13xrctk13n9bxn'>
-        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
-        <column datatype='string' name='[Region]' role='dimension' type='nominal' />
-        <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
-        <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
-      </datasource-dependencies>
-      <zones>
-        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='97916' id='7' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
-            <zone h='97916' id='5' type-v2='layout-basic' w='87115' x='586' y='1042'>
-              <zone h='97916' id='11' name='Unemployment Rate (Region)' w='43557' x='44144' y='1042'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='48958' id='26' name='Access to Electricity' w='43558' x='586' y='1042'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='48958' id='29' name='Mean Years of School (Region)' w='43558' x='586' y='50000'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-            </zone>
-            <zone fixed-size='160' h='97916' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='11713' x='87701' y='1042'>
-              <zone h='30077' id='30' name='Mean Years of School (Region)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='filter' w='11713' x='87701' y='1042'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='30077' id='27' name='Access to Electricity' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='filter' w='11713' x='87701' y='31119'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='10547' id='28' name='Access to Electricity' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:electricity_access:qk]' type-v2='color' w='11713' x='87701' y='61196'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='27215' id='31' name='Mean Years of School (Region)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='color' w='11713' x='87701' y='71743'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-            </zone>
-          </zone>
-          <zone-style>
-            <format attr='border-color' value='#000000' />
-            <format attr='border-style' value='none' />
-            <format attr='border-width' value='0' />
-            <format attr='margin' value='8' />
-          </zone-style>
-        </zone>
-      </zones>
-      <devicelayouts>
-        <devicelayout auto-generated='true' name='Phone'>
-          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
-          <zones>
-            <zone h='100000' id='39' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='38' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
-                <zone h='30077' id='27' mode='checkdropdown' name='Access to Electricity' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='filter' w='11713' x='87701' y='31119'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='48958' id='26' is-fixed='true' name='Access to Electricity' w='43558' x='586' y='1042'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone h='10547' id='28' name='Access to Electricity' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:electricity_access:qk]' type-v2='color' w='11713' x='87701' y='61196'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='97916' id='11' is-fixed='true' name='Unemployment Rate (Region)' w='43557' x='44144' y='1042'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone h='30077' id='30' mode='checkdropdown' name='Mean Years of School (Region)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='filter' w='11713' x='87701' y='1042'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='48958' id='29' is-fixed='true' name='Mean Years of School (Region)' w='43558' x='586' y='50000'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone h='27215' id='31' name='Mean Years of School (Region)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='color' w='11713' x='87701' y='71743'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-              </zone>
-              <zone-style>
-                <format attr='border-color' value='#000000' />
-                <format attr='border-style' value='none' />
-                <format attr='border-width' value='0' />
-                <format attr='margin' value='8' />
-              </zone-style>
-            </zone>
-          </zones>
-        </devicelayout>
-      </devicelayouts>
-      <simple-id uuid='{C056CBA6-DDB9-43E2-BD94-839EFF098100}' />
-    </dashboard>
     <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='HDI Dashboard'>
       <style />
       <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
@@ -8044,7 +7979,13 @@
         <datasource caption='Human Development Index Data' name='federated.05m1h8z1r5krpn13xrctk13n9bxn' />
       </datasources>
       <datasource-dependencies datasource='federated.05m1h8z1r5krpn13xrctk13n9bxn'>
-        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+          <semantic-values semantic-role='[Country].[Name]'>
+            <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+            <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+            <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+          </semantic-values>
+        </column>
         <column datatype='string' name='[Region]' role='dimension' type='nominal' />
         <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
         <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
@@ -8117,8 +8058,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='850' minheight='850' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='39' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='38' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='43' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='42' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
                 <zone h='30077' id='8' mode='checkdropdown' name='Average HDI (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='filter' w='11713' x='87701' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -8193,7 +8134,13 @@
         <datasource caption='Human Development Index Data' name='federated.05m1h8z1r5krpn13xrctk13n9bxn' />
       </datasources>
       <datasource-dependencies datasource='federated.05m1h8z1r5krpn13xrctk13n9bxn'>
-        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+          <semantic-values semantic-role='[Country].[Name]'>
+            <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+            <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+            <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+          </semantic-values>
+        </column>
         <column datatype='string' name='[Region]' role='dimension' type='nominal' />
         <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
         <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
@@ -8270,8 +8217,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='33' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='32' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='36' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
                 <zone h='32638' id='23' mode='checkdropdown' name='Life Expectancy At Birth (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='filter' w='11713' x='87701' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -8339,14 +8286,20 @@
       </devicelayouts>
       <simple-id uuid='{9BE77BF0-1230-4E63-BBF6-8D9D8379E10D}' />
     </dashboard>
-    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Wealth Dashboard'>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Policies Dashboard'>
       <style />
       <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
       <datasources>
         <datasource caption='Human Development Index Data' name='federated.05m1h8z1r5krpn13xrctk13n9bxn' />
       </datasources>
       <datasource-dependencies datasource='federated.05m1h8z1r5krpn13xrctk13n9bxn'>
-        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+          <semantic-values semantic-role='[Country].[Name]'>
+            <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+            <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+            <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+          </semantic-values>
+        </column>
         <column datatype='string' name='[Region]' role='dimension' type='nominal' />
         <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
         <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
@@ -8355,7 +8308,7 @@
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
           <zone h='97916' id='7' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
             <zone h='97916' id='5' type-v2='layout-basic' w='87115' x='586' y='1042'>
-              <zone h='48958' id='12' name='Carbon Dioxide Emissions per Capita (Region)' w='43557' x='586' y='50000'>
+              <zone h='48958' id='26' name='Access to Electricity' w='43557' x='44144' y='50000'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -8363,7 +8316,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='48958' id='21' name='GDP (Region)' w='43557' x='586' y='1042'>
+              <zone h='48958' id='29' name='Mean Years of School (Region)' w='43558' x='586' y='50000'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -8371,7 +8324,15 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='97916' id='24' name='Employment to Population Ratio (Country)' w='43558' x='44143' y='1042'>
+              <zone h='48958' id='40' name='Average HDI (Country)' w='43558' x='586' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48958' id='44' name='Carbon Dioxide Emissions per Capita (Country)' w='43557' x='44144' y='1042'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -8381,7 +8342,7 @@
               </zone>
             </zone>
             <zone fixed-size='160' h='97916' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='11713' x='87701' y='1042'>
-              <zone h='24479' id='22' name='GDP (Region)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='filter' w='11713' x='87701' y='1042'>
+              <zone h='12803' id='30' name='Mean Years of School (Region)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='filter' w='11713' x='87701' y='1042'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -8389,7 +8350,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='24479' id='25' name='Employment to Population Ratio (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='filter' w='11713' x='87701' y='25521'>
+              <zone h='12803' id='27' name='Access to Electricity' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='filter' w='11713' x='87701' y='13845'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -8397,7 +8358,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='24479' id='23' name='GDP (Region)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='color' w='11713' x='87701' y='50000'>
+              <zone h='10547' id='28' name='Access to Electricity' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:electricity_access:qk]' type-v2='color' w='11713' x='87701' y='26648'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -8405,7 +8366,39 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='24479' id='26' name='Employment to Population Ratio (Country)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='color' w='11713' x='87701' y='74479'>
+              <zone h='12803' id='31' name='Mean Years of School (Region)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='color' w='11713' x='87701' y='37195'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12803' id='41' name='Average HDI (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='filter' w='11713' x='87701' y='49998'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12803' id='42' name='Average HDI (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='filter' w='11713' x='87701' y='62801'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10547' id='43' name='Average HDI (Country)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:Calculation_187180873276198912:qk]' type-v2='color' w='11713' x='87701' y='75604'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12807' id='45' name='Carbon Dioxide Emissions per Capita (Country)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='color' w='11713' x='87701' y='86151'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -8425,11 +8418,11 @@
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
-          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <size maxheight='1700' minheight='1700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='34' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='33' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
-                <zone h='24479' id='22' mode='checkdropdown' name='GDP (Region)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='filter' w='11713' x='87701' y='1042'>
+            <zone h='100000' id='49' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='48' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone h='12803' id='41' mode='checkdropdown' name='Average HDI (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='filter' w='11713' x='87701' y='49998'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -8438,7 +8431,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='48958' id='21' is-fixed='true' name='GDP (Region)' w='43557' x='586' y='1042'>
+                <zone h='12803' id='42' mode='checkdropdown' name='Average HDI (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='filter' w='11713' x='87701' y='62801'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -8447,7 +8440,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='24479' id='23' name='GDP (Region)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='color' w='11713' x='87701' y='50000'>
+                <zone fixed-size='280' h='48958' id='40' is-fixed='true' name='Average HDI (Country)' w='43558' x='586' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -8456,7 +8449,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='24479' id='25' mode='checkdropdown' name='Employment to Population Ratio (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='filter' w='11713' x='87701' y='25521'>
+                <zone h='10547' id='43' name='Average HDI (Country)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:Calculation_187180873276198912:qk]' type-v2='color' w='11713' x='87701' y='75604'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -8465,7 +8458,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='97916' id='24' is-fixed='true' name='Employment to Population Ratio (Country)' w='43558' x='44143' y='1042'>
+                <zone fixed-size='280' h='48958' id='44' is-fixed='true' name='Carbon Dioxide Emissions per Capita (Country)' w='43557' x='44144' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -8474,7 +8467,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='24479' id='26' name='Employment to Population Ratio (Country)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='color' w='11713' x='87701' y='74479'>
+                <zone h='12807' id='45' name='Carbon Dioxide Emissions per Capita (Country)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='color' w='11713' x='87701' y='86151'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -8483,7 +8476,275 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='48958' id='12' is-fixed='true' name='Carbon Dioxide Emissions per Capita (Region)' w='43557' x='586' y='50000'>
+                <zone h='12803' id='30' mode='checkdropdown' name='Mean Years of School (Region)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='filter' w='11713' x='87701' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48958' id='29' is-fixed='true' name='Mean Years of School (Region)' w='43558' x='586' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12803' id='31' name='Mean Years of School (Region)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='color' w='11713' x='87701' y='37195'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12803' id='27' mode='checkdropdown' name='Access to Electricity' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='filter' w='11713' x='87701' y='13845'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48958' id='26' is-fixed='true' name='Access to Electricity' w='43557' x='44144' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10547' id='28' name='Access to Electricity' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:electricity_access:qk]' type-v2='color' w='11713' x='87701' y='26648'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C056CBA6-DDB9-43E2-BD94-839EFF098100}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Wealth Dashboard'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Human Development Index Data' name='federated.05m1h8z1r5krpn13xrctk13n9bxn' />
+      </datasources>
+      <datasource-dependencies datasource='federated.05m1h8z1r5krpn13xrctk13n9bxn'>
+        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+          <semantic-values semantic-role='[Country].[Name]'>
+            <semantic-value key='&quot;Eswatini (Kingdom of)&quot;' value='&quot;Eswatini&quot;' />
+            <semantic-value key='&quot;Korea (Democratic People&apos;s Rep. of)&quot;' value='&quot;North Korea&quot;' />
+            <semantic-value key='&quot;Palestine, State of&quot;' value='&quot;Palestinian Territories&quot;' />
+          </semantic-values>
+        </column>
+        <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+        <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='7' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='97916' id='5' type-v2='layout-basic' w='87115' x='586' y='1042'>
+              <zone h='48958' id='24' name='Employment to Population Ratio (Country)' w='43558' x='44143' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48958' id='35' name='Average HDI (Country)' w='43557' x='586' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48958' id='39' name='Poverty Rate' w='43557' x='586' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48958' id='41' name='GDP (Country)' w='43558' x='44143' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97916' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='11713' x='87701' y='1042'>
+              <zone h='19205' id='25' name='Employment to Population Ratio (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='filter' w='11713' x='87701' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='19205' id='26' name='Employment to Population Ratio (Country)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='color' w='11713' x='87701' y='20247'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='19205' id='36' name='Average HDI (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='filter' w='11713' x='87701' y='39452'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='19205' id='37' name='Average HDI (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='filter' w='11713' x='87701' y='58657'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10547' id='38' name='Average HDI (Country)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:Calculation_187180873276198912:qk]' type-v2='color' w='11713' x='87701' y='77862'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10549' id='40' name='Poverty Rate' pane-specification-id='2' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:poverty_rate:qk]' type-v2='color' w='11713' x='87701' y='88409'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='45' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='44' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone h='19205' id='36' mode='checkdropdown' name='Average HDI (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Region:nk]' type-v2='filter' w='11713' x='87701' y='39452'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='19205' id='37' mode='checkdropdown' name='Average HDI (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='filter' w='11713' x='87701' y='58657'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48958' id='35' is-fixed='true' name='Average HDI (Country)' w='43557' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10547' id='38' name='Average HDI (Country)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:Calculation_187180873276198912:qk]' type-v2='color' w='11713' x='87701' y='77862'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='19205' id='25' mode='checkdropdown' name='Employment to Population Ratio (Country)' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='filter' w='11713' x='87701' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48958' id='24' is-fixed='true' name='Employment to Population Ratio (Country)' w='43558' x='44143' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='19205' id='26' name='Employment to Population Ratio (Country)' pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[none:Country:nk]' type-v2='color' w='11713' x='87701' y='20247'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48958' id='39' is-fixed='true' name='Poverty Rate' w='43557' x='586' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10549' id='40' name='Poverty Rate' pane-specification-id='2' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:poverty_rate:qk]' type-v2='color' w='11713' x='87701' y='88409'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48958' id='41' is-fixed='true' name='GDP (Country)' w='43558' x='44143' y='50000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -8507,7 +8768,7 @@
     </dashboard>
   </dashboards>
   <windows source-height='44'>
-    <window class='dashboard' name='HDI Dashboard'>
+    <window class='dashboard' maximized='true' name='HDI Dashboard'>
       <viewpoints>
         <viewpoint name='Average HDI (Country)'>
           <zoom type='entire-view' />
@@ -8531,33 +8792,39 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='10' />
       <simple-id uuid='{09629381-65A3-4C10-9237-B31C0D1659AB}' />
     </window>
-    <window class='dashboard' name='Education Dashboard'>
+    <window class='dashboard' name='Policies Dashboard'>
       <viewpoints>
         <viewpoint name='Access to Electricity'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average HDI (Country)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Carbon Dioxide Emissions per Capita (Country)'>
           <zoom type='entire-view' />
         </viewpoint>
         <viewpoint name='Mean Years of School (Region)'>
           <zoom type='entire-view' />
         </viewpoint>
-        <viewpoint name='Unemployment Rate (Region)'>
-          <zoom type='entire-view' />
-        </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='26' />
       <simple-id uuid='{D650F30D-8DDC-4D8A-80C9-B8BE01DD5FD9}' />
     </window>
     <window class='dashboard' name='Wealth Dashboard'>
       <viewpoints>
-        <viewpoint name='Carbon Dioxide Emissions per Capita (Region)'>
+        <viewpoint name='Average HDI (Country)'>
           <zoom type='entire-view' />
         </viewpoint>
         <viewpoint name='Employment to Population Ratio (Country)'>
           <zoom type='entire-view' />
         </viewpoint>
-        <viewpoint name='GDP (Region)'>
+        <viewpoint name='GDP (Country)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Poverty Rate'>
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
@@ -8582,10 +8849,7 @@
         <viewpoint name='Average HDI (Country)'>
           <zoom type='entire-view' />
         </viewpoint>
-        <viewpoint name='Conflict (Country)'>
-          <zoom type='entire-view' />
-        </viewpoint>
-        <viewpoint name='Poverty Rate'>
+        <viewpoint name='Number of Conflicts vs Affected Population (Country)'>
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
@@ -8821,7 +9085,7 @@
       </viewpoint>
       <simple-id uuid='{4B00883C-8628-4236-AC32-C0C629031569}' />
     </window>
-    <window class='worksheet' maximized='true' name='Gross National Income (Region)'>
+    <window class='worksheet' name='Gross National Income (Region)'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -9523,7 +9787,7 @@
       </cards>
       <simple-id uuid='{D06D5DE6-4DCA-46CD-BF65-E5A75D3F0D32}' />
     </window>
-    <window class='worksheet' name='Sheet 31'>
+    <window class='worksheet' name='Number of Conflicts vs Affected Population (Country)'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -9545,11 +9809,35 @@
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[avg:electricity_access:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:no_of_conflicts:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.05m1h8z1r5krpn13xrctk13n9bxn].[sum:total_no_affected:qk]' type='size' />
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{E549F88B-B4EC-450F-A4F5-7126A2E28D46}' />
+      <simple-id uuid='{B4094326-5778-4659-A541-26E5CD4FD820}' />
+    </window>
+    <window class='worksheet' name='Sheet 32'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{009E9FA2-BBBC-4515-B4D7-F7DEF3AE547A}' />
     </window>
   </windows>
 </workbook>
