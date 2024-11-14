@@ -27,5 +27,5 @@ This project relies on real-time data from the IMF and World Bank APIs, which ca
 1. **Clone the WDC Repository**  
    Clone the repository containing the code to access the IMF and World Bank data:
    ```bash
-   git clone https://github.com/ethantankw/IMF-World-Bank-Tableau-WDC.git
+   git clone https://github.com/ethantankw7/IMF-World-Bank-Tableau-WDC.git
 2. Enter the WDC link to the WDC connector on Tableau to access the live data
